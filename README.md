@@ -40,19 +40,16 @@ A modern, responsive, and accessible landing page designed for **Sakthi Dental C
 
 ---
 
-## 📁 Project Structure
+## 🚀 Getting Started Locally
 
-```text
-client-landing-page/
-├── Client-Landing-Page/
-│   ├── artifacts/
-│   │   ├── sakthi-dental/          # Main frontend client application
-│   │   │   ├── src/                # Components, pages, assets, and styles
-│   │   │   ├── index.html          # Entry HTML
-│   │   │   ├── package.json        # Frontend dependencies & scripts
-│   │   │   ├── tsconfig.json       # TypeScript configuration
-│   │   └── api-server/             # Backend / API services
-│   ├── lib/                        # Shared libraries and types
-│   ├── package.json                # Workspace configuration
-│   └── pnpm-workspace.yaml         # Monorepo setup
-└── README.md
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 18 or higher)
+- [pnpm](https://pnpm.io/) (version 9 or 10)
+
+### Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/An-star415/client-landing-page.git](https://github.com/An-star415/client-landing-page.git)
+   cd client-landing-page
