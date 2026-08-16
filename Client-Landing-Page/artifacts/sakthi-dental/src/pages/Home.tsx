@@ -147,13 +147,13 @@ export function Home() {
   return (
     <div className="flex flex-col w-full font-sans text-foreground bg-background">
       
-      {/* Hero Section with normal flow layout so buttons never get cut or hidden */}
-      <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 w-full overflow-hidden bg-[#3b2b48]">
-        <div className="absolute inset-0 opacity-75" ref={heroRef}>
-          <div className="flex h-full">
+      {/* Hero Section with fixed mobile visibility and theme accent background */}
+      <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 w-full overflow-hidden bg-blue-900">
+        <div className="absolute inset-0 z-0 opacity-60 md:opacity-75" ref={heroRef}>
+          <div className="flex h-full w-full">
             {banners.map((src, i) => (
-              <div key={i} className="flex-[0_0_100%] min-w-0 h-full relative">
-                <div className="absolute inset-0 bg-[#3b2b48]/80 z-10" />
+              <div key={i} className="flex-[0_0_100%] min-w-full h-full relative">
+                <div className="absolute inset-0 bg-blue-950/70 z-10" />
                 <img 
                   src={src} 
                   alt="Dental Clinic Banner" 
@@ -161,7 +161,7 @@ export function Home() {
                   height="1080"
                   fetchPriority={i === 0 ? "high" : "auto"}
                   loading={i === 0 ? "eager" : "lazy"}
-                  className="w-full h-full object-cover" 
+                  className="w-full h-full object-cover block" 
                 />
               </div>
             ))}
@@ -171,9 +171,9 @@ export function Home() {
         <div className="relative z-20 container mx-auto px-4 flex flex-col items-center justify-center text-center">
           <div className="max-w-4xl space-y-5">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight drop-shadow-md">
-              Specialized Dental Care for <span className="text-[#d8b4fe]">Women, Children & Families</span>
+              Specialized Dental Care for <span className="text-pink-300 md:text-[#d8b4fe]">Women, Children & Families</span>
             </h1>
-            <p className="text-sm md:text-base text-gray-200 max-w-2xl mx-auto leading-relaxed drop-shadow">
+            <p className="text-sm md:text-base text-gray-100 max-w-2xl mx-auto leading-relaxed drop-shadow">
               Experience compassionate, expert-led dental services tailored to your needs, all in a modern and welcoming environment.
             </p>
             
@@ -185,7 +185,7 @@ export function Home() {
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto text-white border-white/60 hover:bg-white hover:text-purple-950 bg-black/30 backdrop-blur-sm h-11 px-7 text-sm md:text-base">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto text-white border-white/60 hover:bg-white hover:text-blue-950 bg-black/30 backdrop-blur-sm h-11 px-7 text-sm md:text-base">
                   Emergency Dental Support
                 </Button>
               </Link>
