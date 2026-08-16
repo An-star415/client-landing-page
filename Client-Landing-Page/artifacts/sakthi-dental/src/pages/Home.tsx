@@ -147,13 +147,13 @@ export function Home() {
   return (
     <div className="flex flex-col w-full font-sans text-foreground bg-background">
       
-      {/* Hero Section with fixed mobile visibility and theme accent background */}
-      <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 w-full overflow-hidden bg-blue-900">
-        <div className="absolute inset-0 z-0 opacity-60 md:opacity-75" ref={heroRef}>
+      {/* Hero Section with pure image carousel background and transparent overlay */}
+      <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 w-full overflow-hidden bg-transparent">
+        <div className="absolute inset-0 z-0" ref={heroRef}>
           <div className="flex h-full w-full">
             {banners.map((src, i) => (
               <div key={i} className="flex-[0_0_100%] min-w-full h-full relative">
-                <div className="absolute inset-0 bg-blue-950/70 z-10" />
+                <div className="absolute inset-0 bg-black/50 z-10" />
                 <img 
                   src={src} 
                   alt="Dental Clinic Banner" 
