@@ -290,6 +290,136 @@ export function Home() {
         </div>
       </section>
 
+      {/* Dental Treatment Plans / Pricing Section */}
+      <section id="pricing" className="py-20 bg-accent/20 border-t border-border">
+        <div className="container mx-auto px-4">
+            
+            {/* Section Header */}
+            <div className="text-center max-w-3xl mx-auto mb-16">
+                <h2 className="text-base text-primary font-semibold tracking-wide uppercase">Transparent Care Plans</h2>
+                <p className="mt-2 text-3xl font-display font-bold text-foreground sm:text-4xl">
+                    Affordable Dental Packages for Your Family
+                </p>
+                <p className="mt-4 text-muted-foreground text-lg">
+                    Clear, upfront pricing with no hidden charges. Choose a care plan tailored to your smile.
+                </p>
+            </div>
+
+            {/* Pricing Cards Grid */}
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-8 max-w-7xl mx-auto">
+                
+                {/* Preventive Care Plan */}
+                <div className="bg-card rounded-2xl shadow-sm border border-border p-8 flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <h3 className="text-xl font-display font-semibold text-foreground">Essential Care</h3>
+                        <p className="mt-4 text-sm text-muted-foreground">Perfect for routine maintenance, check-ups, and preventive hygiene.</p>
+                        <div className="mt-6 flex items-baseline">
+                            <span className="text-4xl font-extrabold tracking-tight text-foreground">₹499</span>
+                            <span className="ml-1 text-sm font-medium text-muted-foreground">/ visit</span>
+                        </div>
+
+                        {/* Features List */}
+                        <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
+                            <li className="flex items-center">
+                                <svg className="flex-shrink-0 h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                Comprehensive Dental Consultation
+                            </li>
+                            <li className="flex items-center">
+                                <svg className="flex-shrink-0 h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                Scale & Polish Guidance
+                            </li>
+                            <li className="flex items-center text-muted-foreground">
+                                <svg className="flex-shrink-0 h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                Basic Oral Health Screening
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="mt-8">
+                        <Link href="/contact">
+                            <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                                Book Consultation
+                            </Button>
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Family Care Plan (Highlighted) */}
+                <div className="bg-card rounded-2xl shadow-lg border-2 border-primary p-8 flex flex-col justify-between relative">
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span className="bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-full">Most Popular</span>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-display font-semibold text-foreground">Family Wellness Pack</h3>
+                        <p className="mt-4 text-sm text-muted-foreground">Comprehensive coverage and preventive care designed for up to 4 family members.</p>
+                        <div className="mt-6 flex items-baseline">
+                            <span className="text-4xl font-extrabold tracking-tight text-foreground">₹1,999</span>
+                            <span className="ml-1 text-sm font-medium text-muted-foreground">/ year</span>
+                        </div>
+
+                        {/* Features List */}
+                        <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
+                            <li className="flex items-center">
+                                <svg className="flex-shrink-0 h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                Free Bi-Annual Checkups (4 Members)
+                            </li>
+                            <li className="flex items-center">
+                                <svg className="flex-shrink-0 h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                20% Discount on All Treatments
+                            </li>
+                            <li className="flex items-center">
+                                <svg className="flex-shrink-0 h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                Priority Emergency Support
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="mt-8">
+                        <Link href="/contact">
+                            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-md">
+                                Join Family Plan
+                            </Button>
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Specialized Procedures */}
+                <div className="bg-card rounded-2xl shadow-sm border border-border p-8 flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <h3 className="text-xl font-display font-semibold text-foreground">Specialized Procedures</h3>
+                        <p className="mt-4 text-sm text-muted-foreground">Tailored care packages for advanced cosmetic or orthodontic solutions.</p>
+                        <div className="mt-6 flex items-baseline">
+                            <span className="text-4xl font-extrabold tracking-tight text-foreground">₹1,499</span>
+                            <span className="ml-1 text-sm font-medium text-muted-foreground">/ consultation</span>
+                        </div>
+
+                        {/* Features List */}
+                        <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
+                            <li className="flex items-center">
+                                <svg className="flex-shrink-0 h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                Braces & Clear Aligners Consultation
+                            </li>
+                            <li className="flex items-center">
+                                <svg className="flex-shrink-0 h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                Implants & Laser Dentistry Options
+                            </li>
+                            <li className="flex items-center">
+                                <svg className="flex-shrink-0 h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                Flexible Zero-Cost EMI Available
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="mt-8">
+                        <Link href="/contact">
+                            <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                                Inquire Now
+                            </Button>
+                        </Link>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="py-20 bg-accent/30 border-t border-border">
         <div className="container mx-auto px-4">
